@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORBIT CONNECT-10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+    <h2>🚀 ORBIT CONNECT-10</h2>
+    <p>MISSION CONTROL SYSTEM</p>
+</nav>
+<div class="welcome-panel">
+    <h2>WELCOME TO SPACE MISSION CONTROL</h2>
+    <p>Command • Monitor • Explore</p>
+    <p>Mission: ORBIT CONNECT-10</p>
+</div>
+<div class="satellite-animation">
+    <div class="stars">
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+</div>
+    <div class="orbit-circle">
+        <div class="earth">🌍</div>
+        <div class="satellite">🛰️</div>
+    </div>
+    <p>SATELLITE ORBIT SIMULATION</p>
+</div>
+<div class="signal-animation">
+    <h3>📡 SIGNAL TRANSMISSION</h3>
+    <div class="signal-wave"></div>
+    <p>Transmitting Data to Earth...</p>
+</div>
+<div class="signal-strength">
+    <h3>📶 LIVE SIGNAL STRENGTH</h3>
+    <div class="signal-meter">
+        <div class="signal-level"></div>
+    </div>
+    <p>Signal: 95% - Excellent</p>
+</div>
+<div class="alert-panel">
+    <h3>🚨 MISSION ALERT CENTER</h3>
+    <p>🟢 Satellite System: Normal</p>
+    <p>🟢 Communication: Stable</p>
+    <p>🟡 Backup System: Standby</p>
+    <button onclick="checkAlerts()">CHECK ALERTS</button>
+    <p id="alertStatus">No New Alerts</p>
+</div>
+<div class="objectives-panel">
+    <h3>🎯 MISSION OBJECTIVES</h3>
+    <p>✅ Establish MEO Orbit</p>
+    <p>✅ Activate Communication System</p>
+    <p>✅ Maintain Satellite Power</p>
+    <p>✅ Monitor Mission Safety</p>
+    <p>🔄 Complete 10-Year Mission</p>
+</div>
+<div class="achievement-panel">
+    <h3>🏆 MISSION ACHIEVEMENTS</h3>
+    <div class="achievement">
+        🛰️ Satellite Designer
+    </div>
+    <div class="achievement">
+        📡 Communication Expert
+    </div>
+    <div class="achievement">
+        🛡️ Mission Safety Officer
+    </div>
+    <div class="achievement">
+        🚀 Space Mission Commander
+    </div>
+</div>
+<div class="completion-panel">
+    <h2>🌌 MISSION CONTROL</h2>
+    <h3>ORBIT CONNECT-10</h3>
+    <p>Mission Design: Completed</p>
+    <p>Simulation Status: Ready</p>
+    <button onclick="finishMission()">
+        COMPLETE MISSION
+    </button>
+    <p id="completionStatus"></p>
+</div>
+<div class="clock-panel">
+    <h3>🕒 MISSION CONTROL CLOCK</h3>
+    <p id="missionClock">Loading Time...</p>
+</div>
+<div class="countdown-panel">
+    <h3>🚀 MISSION COUNTDOWN</h3>
+    <p id="countdown">MISSION READY</p>
+    <button onclick="startCountdown()">START COUNTDOWN</button>
+</div>
+
+    <div class="container">
+        <h1>🚀 ORBIT CONNECT-10</h1>
+        <p>Advanced Space Mission Design Simulator</p>
+
+        <div class="mission">
+            <h2>Mission Control</h2>
+            <p>Welcome, Mission Commander!</p>
+            <button onclick="startMission()">START MISSION</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<button onclick="startMission()">START MISSION</button>
+<div class="dashboard">
+    <h2>MISSION DASHBOARD</h2>
+    <div class="status-panel">
+        <div class="signal-panel">
+    <h3>📡 SATELLITE SIGNAL MONITOR</h3>
+    <p>Signal Strength: 95%</p>
+    <p>Connection: Stable 🟢</p>
+    <p>Latency: 25 ms</p>
+</div>
+<div class="battery-panel">
+    <h3>🔋 BATTERY MONITOR</h3>
+    <p>Battery Level: 98%</p>
+    <p>Power Source: Solar + Battery</p>
+    <p>Battery Health: Excellent 🟢</p>
+</div>
+<div class="telemetry-panel">
+    <h3>🛰️ SATELLITE TELEMETRY</h3>
+    <p>Altitude: 20,200 km</p>
+    <p>Velocity: 13,000 km/h</p>
+    <p>Temperature: Normal</p>
+    <p>System Health: 100% 🟢</p>
+</div>
+<div class="communication-panel">
+    <h3>📡 COMMUNICATION CONTROL</h3>
+    <p>Laser Link: Connected 🟢</p>
+    <p>RF Backup: Standby</p>
+    <p>Data Transfer: Active</p>
+    <button onclick="alert('Communication Link Checked!')">
+        CHECK CONNECTION
+    </button>
+</div>
+<div class="security-panel">
+    <h3>🛡️ CYBERSECURITY CENTER</h3>
+    <p>Encryption: Enabled 🔒</p>
+    <p>Firewall: Active 🟢</p>
+    <p>Threat Detection: Monitoring</p>
+    <p>Backup Security: Ready</p>
+</div>
+<div class="emergency-panel">
+    <h3>🚨 EMERGENCY BACKUP SYSTEM</h3>
+    <p>Backup Satellite: Ready 🟢</p>
+    <p>Backup Power: Available</p>
+    <p>Emergency Response: Standby</p>
+    <button onclick="alert('Emergency Backup System Checked!')">
+        CHECK BACKUP
+    </button>
+</div>
+<div class="timeline-panel">
+    <h3>⏳ MISSION TIMELINE</h3>
+    <p>2026 – Mission Preparation</p>
+    <p>2027 – Satellite Launch</p>
+    <p>2028 – Orbit Monitoring</p>
+    <p>2036 – Mission Completion Target</p>
+</div>
+<div class="report-panel">
+    <h3>📊 MISSION REPORTS</h3>
+    <p>Mission Type: Communication</p>
+    <p>Mission Duration: 10 Years</p>
+    <p>Satellite Status: Operational</p>
+    <button onclick="generateReport()">
+    GENERATE REPORT
+    <button onclick="downloadReport()">
+    📥 DOWNLOAD REPORT
+</button>
+</button>
+<p id="reportStatus"></p>
+</div>
+<div class="control-panel">
+    <h3>🎮 SATELLITE CONTROL CENTER</h3>
+
+    <button onclick="changeOrbit()">
+        CHECK ORBIT
+    </button>
+
+    <button onclick="checkPower()">
+        CHECK POWER
+    </button>
+
+    <p id="controlStatus">System Waiting...</p>
+</div>
+    <h3>LIVE MISSION STATUS</h3>
+    <p>🛰️ Orbit: MEO</p>
+    <p>☀️ Power: Normal</p>
+    <p>📡 Communication: Connected</p>
+    <p>🛡️ Security: Protected</p>
+</div>
+    <p>Satellite: ORBIT CONNECT-10</p>
+    <p>Orbit: MEO</p>
+    <p>Power: Solar + Battery</p>
+    <p>Communication: Laser</p>
+    <p id="satelliteStatus">Status: Ready</p>
+<button onclick="activateSatellite()">ACTIVATE SATELLITE</button>
+</div>
+<div class="progress-box">
+    <h3>MISSION PROGRESS</h3>
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+    <p>Mission Progress: 75%</p>
+</div>
+<div class="launch-section">
+    <h3>SPACE LAUNCH CONTROL</h3>
+    <button onclick="launchSatellite()">
+        🚀 LAUNCH SATELLITE
+    </button>
+    <p id="launchStatus">Waiting for Launch...</p>
+</div>
+<div class="activity-log">
+    <h3>MISSION ACTIVITY LOG</h3>
+    <ul id="activityList">
+        <li>Mission Control Initialized</li>
+        <li>Satellite System Ready</li>
+    </ul>
+</div>
+

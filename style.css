@@ -1,0 +1,755 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050816;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h1 {
+    color: #38bdf8;
+    font-size: 38px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px #0284c7;
+}
+.container > p {
+    color: #a5b4fc;
+    margin-bottom: 45px;
+}
+
+.mission {
+    background: linear-gradient(145deg, #111c3a, #172554);
+    border: 1px solid #2563eb;
+    border-radius: 18px;
+    padding: 35px 20px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 25px #1d4ed8;
+}
+
+.mission h2 {
+    color: #67e8f9;
+    margin-bottom: 18px;
+}
+button {
+    background: #0284c7;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0ea5e9;
+    box-shadow: 0 0 18px #38bdf8;
+}
+.dashboard {
+    margin: 40px auto;
+    padding: 25px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #111c3a, #172554);
+    border: 1px solid #38bdf8;
+    border-radius: 18px;
+    box-shadow: 0 0 20px #0284c7;
+}
+
+.dashboard h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.dashboard p {
+    color: white;
+    padding: 10px;
+    margin: 8px;
+    background: #1e3a5f;
+    border-radius: 8px;
+}
+.progress-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: #0f1b35;
+    border-radius: 12px;
+}
+
+.progress-box h3 {
+    color: #67e8f9;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 18px;
+    background: #334155;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 75%;
+    height: 100%;
+    background: #38bdf8;
+    border-radius: 20px;
+    box-shadow: 0 0 12px #38bdf8;
+}
+.launch-section {
+    margin-top: 30px;
+    padding: 25px;
+    background: #111c3a;
+    border: 1px solid #0ea5e9;
+    border-radius: 15px;
+}
+
+.launch-section h3 {
+    color: #67e8f9;
+    margin-bottom: 20px;
+}
+
+.launch-section button {
+    background: #e11d48;
+    padding: 15px 30px;
+}
+
+.launch-section button:hover {
+    background: #be123c;
+}
+
+#launchStatus {
+    margin-top: 20px;
+    color: #38bdf8;
+}
+.activity-log {
+    margin-top: 30px;
+    padding: 25px;
+    background: #0f172a;
+    border: 1px solid #38bdf8;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.activity-log h3 {
+    color: #67e8f9;
+    margin-bottom: 20px;
+}
+
+.activity-log ul {
+    list-style: none;
+}
+
+.activity-log li {
+    background: #1e293b;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: white;
+}
+.status-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: #0f172a;
+    border: 1px solid #22d3ee;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0891b2;
+}
+
+.status-panel h3 {
+    color: #67e8f9;
+    margin-bottom: 15px;
+}
+
+.status-panel p {
+    background: #1e293b;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.signal-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #0f172a, #164e63);
+    border: 1px solid #06b6d4;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0891b2;
+}
+
+.signal-panel h3 {
+    color: #67e8f9;
+    margin-bottom: 15px;
+}
+
+.signal-panel p {
+    background: #1e293b;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.battery-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #052e16, #14532d);
+    border: 1px solid #22c55e;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #16a34a;
+}
+
+.battery-panel h3 {
+    color: #86efac;
+    margin-bottom: 15px;
+}
+
+.battery-panel p {
+    background: #14532d;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.telemetry-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #312e81, #1e1b4b);
+    border: 1px solid #818cf8;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #6366f1;
+}
+
+.telemetry-panel h3 {
+    color: #a5b4fc;
+    margin-bottom: 15px;
+}
+
+.telemetry-panel p {
+    background: #312e81;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.communication-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #164e63, #083344);
+    border: 1px solid #22d3ee;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0891b2;
+}
+
+.communication-panel h3 {
+    color: #67e8f9;
+    margin-bottom: 15px;
+}
+
+.communication-panel p {
+    background: #164e63;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.security-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #451a03, #292524);
+    border: 1px solid #f59e0b;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #d97706;
+}
+
+.security-panel h3 {
+    color: #fcd34d;
+    margin-bottom: 15px;
+}
+
+.security-panel p {
+    background: #44403c;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.emergency-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #7f1d1d, #450a0a);
+    border: 1px solid #ef4444;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #dc2626;
+}
+
+.emergency-panel h3 {
+    color: #fca5a5;
+    margin-bottom: 15px;
+}
+
+.emergency-panel p {
+    background: #7f1d1d;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.timeline-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #3b0764, #1e1b4b);
+    border: 1px solid #c084fc;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #9333ea;
+}
+
+.timeline-panel h3 {
+    color: #d8b4fe;
+    margin-bottom: 15px;
+}
+
+.timeline-panel p {
+    background: #312e81;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.report-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #134e4a, #042f2e);
+    border: 1px solid #2dd4bf;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0d9488;
+}
+
+.report-panel h3 {
+    color: #99f6e4;
+    margin-bottom: 15px;
+}
+
+.report-panel p {
+    background: #115e59;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.control-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #172554, #020617);
+    border: 1px solid #60a5fa;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #2563eb;
+}
+
+.control-panel h3 {
+    color: #93c5fd;
+    margin-bottom: 20px;
+}
+
+.control-panel button {
+    margin: 8px;
+}
+
+.control-panel p {
+    color: #67e8f9;
+    margin-top: 15px;
+}
+.main-nav {
+    background: #0f172a;
+    border-bottom: 2px solid #38bdf8;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-nav h2 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.main-nav p {
+    color: #94a3b8;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 12px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .mission,
+    .dashboard,
+    .status-panel,
+    .signal-panel,
+    .battery-panel,
+    .telemetry-panel,
+    .communication-panel,
+    .security-panel,
+    .emergency-panel,
+    .timeline-panel,
+    .report-panel,
+    .control-panel {
+        width: 100%;
+        padding: 18px 12px;
+    }
+
+    button {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .main-nav h2 {
+        font-size: 21px;
+    }
+}
+.welcome-panel {
+    margin: 30px auto;
+    padding: 35px 20px;
+    max-width: 900px;
+    text-align: center;
+    background: linear-gradient(135deg, #172554, #0c4a6e);
+    border: 1px solid #38bdf8;
+    border-radius: 18px;
+    box-shadow: 0 0 20px #0369a1;
+}
+
+.welcome-panel h2 {
+    color: #7dd3fc;
+    margin-bottom: 15px;
+}
+
+.welcome-panel p {
+    color: #cbd5e1;
+    margin: 10px;
+}
+.clock-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    background: linear-gradient(145deg, #1e1b4b, #312e81);
+    border: 1px solid #818cf8;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #6366f1;
+}
+
+.clock-panel h3 {
+    color: #c4b5fd;
+    margin-bottom: 15px;
+}
+
+#missionClock {
+    color: #67e8f9;
+    font-size: 22px;
+    font-weight: bold;
+}
+.countdown-panel {
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 600px;
+    text-align: center;
+    background: linear-gradient(145deg, #450a0a, #7f1d1d);
+    border: 1px solid #f87171;
+    border-radius: 15px;
+    box-shadow: 0 0 18px #dc2626;
+}
+
+.countdown-panel h3 {
+    color: #fca5a5;
+    margin-bottom: 18px;
+}
+
+#countdown {
+    color: #fef2f2;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+}
+.satellite-animation {
+    text-align: center;
+    margin: 35px auto;
+    padding: 25px;
+}
+
+.orbit-circle {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #38bdf8;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    animation: rotateOrbit 6s linear infinite;
+}
+
+.satellite {
+    position: absolute;
+    top: -15px;
+    left: 55px;
+    font-size: 30px;
+}
+
+.satellite-animation p {
+    color: #67e8f9;
+    margin-top: 20px;
+}
+
+@keyframes rotateOrbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.earth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+    filter: drop-shadow(0 0 15px #38bdf8);
+    animation: earthGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes earthGlow {
+    from {
+        filter: drop-shadow(0 0 5px #38bdf8);
+    }
+    to {
+        filter: drop-shadow(0 0 20px #0ea5e9);
+    }
+}
+.stars {
+    display: flex;
+    justify-content: space-around;
+    color: #facc15;
+    font-size: 22px;
+    margin-bottom: 15px;
+    animation: starGlow 2s infinite alternate;
+}
+
+@keyframes starGlow {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.signal-animation {
+    text-align: center;
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: #0f172a;
+    border: 1px solid #38bdf8;
+    border-radius: 15px;
+}
+
+.signal-animation h3 {
+    color: #67e8f9;
+    margin-bottom: 20px;
+}
+
+.signal-wave {
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    border: 4px solid #38bdf8;
+    border-radius: 50%;
+    animation: signalPulse 1.5s infinite;
+}
+
+.signal-animation p {
+    color: #cbd5e1;
+    margin-top: 18px;
+}
+
+@keyframes signalPulse {
+    0% {
+        transform: scale(0.7);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.signal-strength {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    background: #0f172a;
+    border: 1px solid #22d3ee;
+    border-radius: 15px;
+}
+
+.signal-strength h3 {
+    color: #67e8f9;
+    margin-bottom: 20px;
+}
+
+.signal-meter {
+    height: 18px;
+    background: #334155;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.signal-level {
+    width: 95%;
+    height: 100%;
+    background: #22c55e;
+    border-radius: 20px;
+    box-shadow: 0 0 12px #22c55e;
+}
+
+.signal-strength p {
+    color: #86efac;
+    margin-top: 15px;
+}
+.alert-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #422006, #292524);
+    border: 1px solid #fbbf24;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #d97706;
+}
+
+.alert-panel h3 {
+    color: #fcd34d;
+    margin-bottom: 15px;
+}
+
+.alert-panel p {
+    background: #44403c;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.objectives-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #064e3b, #022c22);
+    border: 1px solid #34d399;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #059669;
+}
+
+.objectives-panel h3 {
+    color: #6ee7b7;
+    margin-bottom: 15px;
+}
+
+.objectives-panel p {
+    background: #065f46;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.achievement-panel {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #713f12, #422006);
+    border: 1px solid #fbbf24;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #d97706;
+}
+
+.achievement-panel h3 {
+    color: #fde68a;
+    margin-bottom: 18px;
+}
+
+.achievement {
+    background: #78350f;
+    color: #fef3c7;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.completion-panel {
+    margin: 30px auto;
+    padding: 30px 20px;
+    max-width: 700px;
+    text-align: center;
+    background: linear-gradient(145deg, #172554, #164e63);
+    border: 2px solid #38bdf8;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #0284c7;
+}
+
+.completion-panel h2 {
+    color: #7dd3fc;
+    margin-bottom: 15px;
+}
+
+.completion-panel h3 {
+    color: #67e8f9;
+    margin-bottom: 20px;
+}
+
+.completion-panel p {
+    color: white;
+    margin: 12px;
+}
+.mission-footer {
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 40px;
+    background: #020617;
+    border-top: 2px solid #38bdf8;
+}
+
+.mission-footer h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.mission-footer p {
+    color: #94a3b8;
+    margin: 8px;
+}
+.game-score, .game-level {
+    background: #172638;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid #34516b;
+}
+.game-score p, .game-level p {
+    color: #00e5ff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mission-objective {
+    background: #172638;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid #34516b;
+}
+
+
